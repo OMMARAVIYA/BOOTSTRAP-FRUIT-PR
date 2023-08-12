@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #393e40 !important;
+    --bs-primary-rgb: 57, 62, 64 !important;
+    --bg-secondary: #FFF669 !important;
+    --bs-secondary-rgb: 255, 246, 105 !important;
+    --text-success: #cccccc !important;
+    --bs-success-rgb: 204, 204, 204 !important;
+    --text-warning: #1BA100 !important;
+    --bg-warning: #1BA100 !important;
+    --bs-warning-rgb: 27, 161, 0 !important;
+    --products-bg-1: #f7f7f7;
+    --primary-font: 'Poppins';
+    --secondary-font: 'Lemonada';
+    --tertiary-font: 'Fira Sans Extra Condensed';
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-24: 24px;
+    --fs-30: 30px;
+    --fs-60: 60px;
+}
+
+.py-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.modal-footer {
+    a {
+        font-size: var(--fs-12);
+    }
+}
+
+.heading {
+    .com-logo {
+        img {
+            width: 132px;
+        }
+    }
+
+    span {
+        font-family: var(--secondary-font);
+    }
+
+    p {
+        font-size: var(--fs-14);
+        font-family: var(--primary-font);
+    }
+}
+
+// header
+
+header {
+    .topbar {
+        font-family: var(--primary-font);
+
+        .top-left {
+            >div {
+                >span {
+                    font-size: var(--fs-12);
+                }
+            }
+
+            ul {
+                li {
+                    >a {
+                        font-size: var(--fs-14);
+
+                        i {
+                            font-size: var(--fs-12);
+                        }
+                    }
+                }
+            }
+        }
+
+        .col-6 {
+            ul {
+                li {
+                    a {
+                        font-size: var(--fs-12);
+
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        .row {
+            .logo {
+                font-family: var(--secondary-font);
+                font-size: var(--fs-30);
+            }
+
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: var(--fs-14);
+                            font-family: var(--primary-font);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.s-1 {
+    background-image: url(../images/fattoria-banner-1.jpg);
+    background-size: cover;
+
+    .banner-text {
+        h3 {
+            font-family: var(--tertiary-font);
+            font-size: var(--fs-24);
+        }
+
+        h2 {
+            font-size: var(--fs-60);
+            font-family: var(--secondary-font);
+        }
+
+        span {
+            a {
+                font-size: var(--fs-14);
+            }
+        }
+    }
+}
+
+.s-2 {
+    .right-store {
+        span {
+            font-family: var(--secondary-font);
+        }
+
+        p {
+            font-size: var(--fs-14);
+            font-family: var(--primary-font);
+        }
+
+        .name {
+            position: relative;
+
+            span {
+                font-family: var(--primary-font);
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 27%;
+                left: 0;
+                width: 65px;
+                height: 3px;
+                background-color: var(--bg-warning);
+            }
+        }
+    }
+}
+
+// s-3
+
+.s-3 {
+    .left-img {
+        .orange {
+            overflow: hidden;
+
+            img {
+                transition: all 0.45s;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .right-img {
+        .bottle {
+            overflow: hidden;
+
+            img {
+                transition: all 0.45s;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .info {
+        h1 {
+            font-family: var(--secondary-font);
+        }
+
+        p {
+            font-family: var(--primary-font);
+            font-size: var(--fs-14);
+        }
+    }
+}
+
+// s-4
+.s-4 {
+    .tab {
+        ul {
+            li {
+                a {
+                    font-size: var(--fs-14);
+                }
+
+                .nav-link {
+                    color: var(--bg-primary);
+                }
+
+                .nav-link.active {
+                    color: var(--bg-warning);
+                }
+            }
+        }
+    }
+
+    .tabs {
+        .tab-items {
+            transition: all 1s;
+
+            .tabs-table {
+                font-family: var(--primary-font);
+
+                .tab-content {
+                    span {
+                        font-size: var(--fs-12);
+                    }
+
+                    p {
+                        font-size: var(--fs-14);
+                    }
+                }
+
+                .extra-link {
+                    // visibility: hidden;
+                    .s1{
+                        top: 10%;
+                        a{
+                            height: 30px;
+                            width: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+            &:hover .extra-link .s1{
+                visibility: visible;
+                left: 20%;
+            }
+        }
+    }
+}
+
+// s-5
+
+.s-5 {
+    .product {
+        .product-items:nth-child(1) {
+            >div {
+                img {
+                    mix-blend-mode: darken;
+                }
+            }
+        }
+    }
+
+    .pro {
+        a {
+            font-size: var(--fs-14);
+        }
+    }
+}
+
+// s-6
+.s-6 {
+    .pro-info {
+        font-family: var(--primary-font);
+
+        span {
+            font-size: var(--fs-14);
+        }
+    }
+}
+
+// s-7
+
+.s-7 {
+    .team-members {
+        .about-team {
+            font-family: var(--primary-font);
+
+            p {
+                font-size: var(--fs-14);
+            }
+
+            h3 {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 1px;
+                    background-color: var(--bg-warning);
+                    top: 174%;
+                    left: 45%;
+                    margin: auto;
+                }
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 32px;
+                    height: 1px;
+                    background-color: var(--bg-warning);
+                    top: 195%;
+                    left: 43%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

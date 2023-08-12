@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #393e40 !important;
+  --bs-primary-rgb: 57, 62, 64 !important;
+  --bg-secondary: #FFF669 !important;
+  --bs-secondary-rgb: 255, 246, 105 !important;
+  --text-success: #cccccc !important;
+  --bs-success-rgb: 204, 204, 204 !important;
+  --text-warning: #1BA100 !important;
+  --bg-warning: #1BA100 !important;
+  --bs-warning-rgb: 27, 161, 0 !important;
+  --products-bg-1: #f7f7f7;
+  --primary-font: "Poppins";
+  --secondary-font: "Lemonada";
+  --tertiary-font: "Fira Sans Extra Condensed";
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-24: 24px;
+  --fs-30: 30px;
+  --fs-60: 60px;
+}
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.fs-12 {
+  font-size: var(--fs-12);
+}
+
+.fs-14 {
+  font-size: var(--fs-14);
+}
+
+.modal-footer a {
+  font-size: var(--fs-12);
+}
+
+.heading .com-logo img {
+  width: 132px;
+}
+
+.heading span {
+  font-family: var(--secondary-font);
+}
+
+.heading p {
+  font-size: var(--fs-14);
+  font-family: var(--primary-font);
+}
+
+header .topbar {
+  font-family: var(--primary-font);
+}
+
+header .topbar .top-left>div>span {
+  font-size: var(--fs-12);
+}
+
+header .topbar .top-left ul li>a {
+  font-size: var(--fs-14);
+}
+
+header .topbar .top-left ul li>a i {
+  font-size: var(--fs-12);
+}
+
+header .topbar .col-6 ul li a {
+  font-size: var(--fs-12);
+}
+
+header .container .row .logo {
+  font-family: var(--secondary-font);
+  font-size: var(--fs-30);
+}
+
+header .container .row nav ul li a {
+  font-size: var(--fs-14);
+  font-family: var(--primary-font);
+}
+
+.s-1 {
+  background-image: url(../images/fattoria-banner-1.jpg);
+  background-size: cover;
+}
+
+.s-1 .banner-text h3 {
+  font-family: var(--tertiary-font);
+  font-size: var(--fs-24);
+}
+
+.s-1 .banner-text h2 {
+  font-size: var(--fs-60);
+  font-family: var(--secondary-font);
+}
+
+.s-1 .banner-text span a {
+  font-size: var(--fs-14);
+}
+
+.s-2 .right-store span {
+  font-family: var(--secondary-font);
+}
+
+.s-2 .right-store p {
+  font-size: var(--fs-14);
+  font-family: var(--primary-font);
+}
+
+.s-2 .right-store .name {
+  position: relative;
+}
+
+.s-2 .right-store .name span {
+  font-family: var(--primary-font);
+}
+
+.s-2 .right-store .name::after {
+  position: absolute;
+  content: "";
+  top: 27%;
+  left: 0;
+  width: 65px;
+  height: 3px;
+  background-color: var(--bg-warning);
+}
+
+.s-3 .left-img .orange {
+  overflow: hidden;
+}
+
+.s-3 .left-img .orange img {
+  transition: all 0.45s;
+}
+
+.s-3 .left-img:hover img {
+  transform: scale(1.1);
+}
+
+.s-3 .right-img .bottle {
+  overflow: hidden;
+}
+
+.s-3 .right-img .bottle img {
+  transition: all 0.45s;
+}
+
+.s-3 .right-img:hover img {
+  transform: scale(1.1);
+}
+
+.s-3 .info h1 {
+  font-family: var(--secondary-font);
+}
+
+.s-3 .info p {
+  font-family: var(--primary-font);
+  font-size: var(--fs-14);
+}
+
+.s-4 .tab ul li a {
+  font-size: var(--fs-14);
+}
+
+.s-4 .tab ul li .nav-link {
+  color: var(--bg-primary);
+}
+
+.s-4 .tab ul li .nav-link.active {
+  color: var(--bg-warning);
+}
+
+.s-4 .tabs .tab-items {
+  transition: all 1s;
+}
+
+.s-4 .tabs .tab-items .tabs-table {
+  font-family: var(--primary-font);
+}
+
+.s-4 .tabs .tab-items .tabs-table .tab-content span {
+  font-size: var(--fs-12);
+}
+
+.s-4 .tabs .tab-items .tabs-table .tab-content p {
+  font-size: var(--fs-14);
+}
+
+.s-4 .tabs .tab-items .tabs-table .extra-link .s1 {
+  top: 10%;
+}
+
+.s-4 .tabs .tab-items .tabs-table .extra-link .s1 a {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.s-4 .tabs .tab-items:hover .extra-link .s1 {
+  visibility: visible;
+  left: 20%;
+}
+
+.s-5 .product .product-items:nth-child(1)>div img {
+  mix-blend-mode: darken;
+}
+
+.s-5 .pro a {
+  font-size: var(--fs-14);
+}
+
+.s-6 .pro-info {
+  font-family: var(--primary-font);
+}
+
+.s-6 .pro-info span {
+  font-size: var(--fs-14);
+}
+
+.s-7 .team-members .about-team {
+  font-family: var(--primary-font);
+}
+
+.s-7 .team-members .about-team p {
+  font-size: var(--fs-14);
+}
+
+.s-7 .team-members .about-team h3 {
+  position: relative;
+}
+
+.s-7 .team-members .about-team h3::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: var(--bg-warning);
+  top: 174%;
+  left: 45%;
+  margin: auto;
+}
+
+.s-7 .team-members .about-team h3::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 1px;
+  background-color: var(--bg-warning);
+  top: 195%;
+  left: 43%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
